@@ -1,7 +1,5 @@
-comparareetpendere
-==================
-
-Comparare et Pendere - Visualize and Compare Source Codes.
+Comparare et Pendere - Visualize and Compare Source Codes
+=========================================================
 
 This is home of Comparare et Pendere (lat. compare and weight) - a source code formatter that produces HTML output from a 
 set of source codes in order to compare and analyse the individual source codes. 
