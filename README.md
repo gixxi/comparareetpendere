@@ -21,7 +21,6 @@ DEPENDENCIES
 * Pygments version >= 1.5
 
 To install pygments enter on a debian-like system enter:
-	
 	sudo apt-get pygments
 
 INSTALLATION 
@@ -126,7 +125,7 @@ Christian Meichsner (PoP Lucern, Switzerland)
 christian.meichsner@informatik.tu-chemnitz.de
 
 LICENSING
-=========
+=======
 
 This programm come licensed under the BSD license.
 
@@ -155,7 +154,3 @@ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
 THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-
-
-
