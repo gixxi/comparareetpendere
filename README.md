@@ -1,6 +1,4 @@
-% Comparare et Pendere (lat. compare and weight) User Guide
-% Christian Meichsner
-% January 25th, 2013 
+# Comparare et Pendere (lat. compare and weight) User Guide #
 
 VERSION
 =======
@@ -48,21 +46,21 @@ Assuming you have several sourcecode files you want to compare in the current
 directory the the following python code generated a file output.html in the
 current directory:
 
-'''python
-from MultisourceHtmlFormatter import MultiSourceFormatter
-from MultisourceHtmlFormatter import CodeLexerTuple
-from pygments.lexers.functional import HaskellLexer
-from pygments.lexers.jvm import JavaLexer
-from MultisourceHtmlFormatter import highlightMultiSource
 
-tuple = CodeLexerTuple(open('Quicksort.hs').read(), HaskellLexer(stripnl=False), 
+    from MultisourceHtmlFormatter import MultiSourceFormatter
+    from MultisourceHtmlFormatter import CodeLexerTuple
+    from pygments.lexers.functional import HaskellLexer
+    from pygments.lexers.jvm import JavaLexer
+    from MultisourceHtmlFormatter import highlightMultiSource
+    
+    tuple = CodeLexerTuple(open('Quicksort.hs').read(), HaskellLexer(stripnl=False),
                                'Haskell Quicksort')
-tuple2 = CodeLexerTuple(open('Quicksort.java').read(), JavaLexer(),
+    tuple2 = CodeLexerTuple(open('Quicksort.java').read(), JavaLexer(),
                          'Java Quicksort')
-result = highlightMultiSource((tuple,tuple2), MultiSourceFormatter(
+    result = highlightMultiSource((tuple,tuple2), MultiSourceFormatter(
         linenos=True, cssclass="source", noclasses=True, showtitles=True))
-open("output.html", mode="w").write("<html><body>" + result + "<body></html>")
-'''
+    open("output.html", mode="w").write("<html><body>" + result + "<body></html>")
+
 
 The workhorse method `highlightMultiSource` takes a tuple of `CodeLexerTuple` 
 instances as well as a `MultiSourceFormatter` into account. 
