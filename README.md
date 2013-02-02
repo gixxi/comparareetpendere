@@ -26,7 +26,7 @@ To install pygments enter on a debian-like system enter:
 INSTALLATION 
 ============
 
-Download the source archive ComparareEtPendere-0.9.tar.gz and extract it:
+Download the source archive https://github.com/gixxi/comparareetpendere/raw/master/dist/ComparareEtPendere-0.9.tar.gz and extract it:
 
 	tar -xf ComparareEtPendere-0.9.tar.gz
 
