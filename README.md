@@ -42,7 +42,23 @@ USAGE
 =====
 
 Assuming you have several sourcecode files you want to compare in the current 
-directory the the following python code generated a file output.html in the
+directory, you might either use the command line script *run.py* or a your own
+*python script*.
+
+
+# Command line #
+
+To get help enter:
+
+	python3 run.py -h
+
+To generate the output enter:
+
+	python3 run.py -i Quicksort.hs -i Quicksort.java -t 'Haskell Quicksort' -t 'Java Quicksort' -o output.html
+
+# Your own python script #
+
+The following python code generated a file output.html in the
 current directory:
 
 
