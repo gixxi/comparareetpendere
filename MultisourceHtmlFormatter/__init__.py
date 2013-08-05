@@ -136,6 +136,12 @@ class MultiSourceFormatter(Formatter):
         css classes are of interest:
             lineno, td-title, bgcoloreven, bgcoloreven2, bgcolorodd,
             bgcolorodd2
+    
+    'fontsize'
+        Default: 1.2em. Denotes the font size used for formatting any token.
+        
+    'fontfamily'
+        Default: Courier. Denotes the font family used for formatting any token.
             
     Usage:
     
@@ -182,6 +188,8 @@ class MultiSourceFormatter(Formatter):
         self.stylebg = get_bool_opt(options, 'stylebg', True)
         self.stylebgalternating = get_bool_opt(options, 'stylebgalternating', 
                                                True)
+        self.fontfamily = options.get('fontfamily','Courier')
+        self.fontsize = options.get('fontsize','1.2em')
         self._create_stylesheet();
         self.linecolwidth = options.get('linecolwidth', 3)
         self.tablewidth = options.get('tablewidth', '100%')
@@ -215,7 +223,8 @@ class MultiSourceFormatter(Formatter):
         c2s = self.class2style = {}
         for ttype, ndef in self.style:
             name = self._get_css_class(ttype)
-            style = ''
+            style = "font-family: '%s'; " % self.fontfamily
+            style += "font-size: %s; " % self.fontsize
             if ndef['color']:
                 style += 'color: #%s; ' % ndef['color']
             if ndef['bold']:
