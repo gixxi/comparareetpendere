@@ -133,6 +133,12 @@ output generation. Flags are:
         css classes are of interest:
             lineno, td-title, bgcoloreven, bgcoloreven2, bgcolorodd,
             bgcolorodd2
+            
+    'fontsize'
+        Default: 1.2em. Denotes the font size used for formatting any token.
+        
+    'fontfamily'
+        Default: Courier. Denotes the font family used for formatting any token.            
 
 AUTHORS
 =======
